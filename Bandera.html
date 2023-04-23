@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <!-- I = Inferior -->
+  <!-- S = Superior -->
+  <!-- D = Derecha -->
+  <!-- I = izquierda -->
+  <!-- Centro = Linea Vertical -->
+  <!-- Horizontal = Linea horizontal -->
+
+  <div class="Bandera">
+
+    <div class="S-I"></div>
+    <div class="S-D"></div>
+    <div class="I-I"></div>
+    <div class="I-D"></div>
+    <div class="Centro"></div>
+    <div class="Horizontal">
+      <img src="img/Coat_of_arms_of_the_Dominican_Republic.svg.png" alt="Escudo de la República Dominicana">
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+<style>
+
+  .Bandera {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform: scale(1.25);
+  }
+  
+  .S-I {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0f2d5f;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .S-D {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ce1126;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .I-I {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ce1126;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .I-D {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0f2d5f;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .Centro {
+    position: absolute;
+    top: 0%;
+    left: 48%;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 10%;
+  }
+  
+  .Horizontal {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    background-color: #FFFFFF;
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.25);
+  }
+  
+  .Horizontal img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 49%; /* ajusta la propiedad left para mover el escudo hacia la derecha */
+  }
+
+</style>
